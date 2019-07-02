@@ -32,10 +32,10 @@ def gram_matrix(x):
 ## 优化策略
     
 - 训练对象改变，训练的不是随机初始化的图片，而是将内容图像通过一个转换网络的输出代替之前的随机初始化的输入。而训练的对象就变成了这个转换网络。此时，只需要移除style loss计算部分就可以实现训练高清化图片网络的效果。
-        * 注意一：转换网络使用conv代替pooling，获得更多的信息。不使用 pooling层,使用 strided和 fractionally strided卷积来做 downsampling和 upsampling。
-        * 注意二：使用五个 residual blocks。residual保证了在这种输入和输出共享的信息较多的时候，可以向前传播更多的信息。
-        * 注意三：输出层使用 scaled tanh保证输出值在[0,255]
-        * 注意四：第一个和最后一个卷积核使用9X9的核,其他使用3×3
+  * 注意一：转换网络使用conv代替pooling，获得更多的信息。不使用 pooling层,使用 strided和 fractionally strided卷积来做 downsampling和 upsampling。
+  * 注意二：使用五个 residual blocks。residual保证了在这种输入和输出共享的信息较多的时候，可以向前传播更多的信息。
+  * 注意三：输出层使用 scaled tanh保证输出值在[0,255]
+  * 注意四：第一个和最后一个卷积核使用9X9的核,其他使用3×3
             
             > ◆先down- sampling再做up- sampling减小了 feature_map的大小,提高性能
             > ◆提高结果图像中的视野域
