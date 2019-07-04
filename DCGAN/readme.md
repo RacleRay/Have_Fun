@@ -19,6 +19,9 @@ D：G的输出, 真实图像分别输入->两个Prob
 > strided conv   
 >  使用 leakyReLU
 
+训练10000步的结果：
+![pic](10000-gen.jpg)
+
 ## Pix2Pix
 与DCGAN不同，G输入为图像，使用U-Net生成图像；D的输入是一对图像一起输入，判断是否是一对。
 
