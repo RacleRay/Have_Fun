@@ -19,7 +19,7 @@ D：G的输出, 真实图像分别输入->两个Prob
 > strided conv   
 >  使用 leakyReLU
 
-训练10000步的结果：
+训练10000步的结果：  
 ![pic](10000-gen.jpg)
 
 ## Pix2Pix
