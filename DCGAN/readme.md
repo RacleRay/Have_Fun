@@ -10,10 +10,10 @@ generator和discriminator的良性竞争，相互制约，目标是提升generat
 > - 定义G和D的结构
 
 G：随机向量->图像
-> 反卷积：与卷积操作的反向传播计算方法相同。[详见]()  
-> pooling层由fractional strided conv代替，避免过多信息损失。  
-> batch normalization（）  
-> 使用global pooling，不用全连接输出。  
+> - 反卷积：与卷积操作的反向传播计算方法相同。[详见](DCGAN/DCGAN.ipynb)  
+> - pooling层由fractional strided conv代替，避免过多信息损失。  
+> - batch normalization  
+> - 使用global pooling，不用全连接输出。  
 
 D：G的输出, 真实图像分别输入->两个Prob
 > strided conv   
