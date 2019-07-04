@@ -25,7 +25,7 @@ multi指：1，来自转化word embedding；2，来自RNN抽象word embedding之
 
 存在问题：
 
-attention权重的学习（反向传播），需要LSTM上一个step的参数，会学习到这一部分的信息。文本生成学习也需要lstm学习信息。这就可能导致一个lstm过载，学习效果变差。
+> attention权重的学习（反向传播），需要LSTM上一个step的参数，会学习到这一部分的信息。文本生成学习也需要lstm学习信息。这就可能导致一个lstm过载，学习效果变差。
 
 ### Top-Down Bottom-Up Attention
 双层LSTM：
@@ -34,6 +34,6 @@ attention权重的学习（反向传播），需要LSTM上一个step的参数，
 - attention计算第一层输出hidden state和图像不同位置的feature编码的关系。
 - 第二层将图像weighted feature和第一层的hidden state作为输入。
 
-这就解决了 Show Attend and Tell的过载问题。
+这可以解决了 Show Attend and Tell的过载问题。
 
 那么，文本生成图像呢？>>> GAN
