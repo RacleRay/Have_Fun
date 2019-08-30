@@ -9,6 +9,7 @@
 
 ## MODEL
 ### Multi-Model RNN
+![1](images/152341.png)
 multi指：1，来自转化word embedding；2，来自RNN抽象word embedding之后的结果；3，来自图像CNN（如Alexnet）抽取的信息（CNN中某fc层的输出）。作为softmax预测下一个词的输入。
 
 ### Show and Tell
