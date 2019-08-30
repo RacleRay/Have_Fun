@@ -9,13 +9,15 @@
 
 ## MODEL
 ### Multi-Model RNN
-![1](images/152341.png)
+![1](images/111.png)  
 multi指：1，来自转化word embedding；2，来自RNN抽象word embedding之后的结果；3，来自图像CNN（如Alexnet）抽取的信息（CNN中某fc层的输出）。作为softmax预测下一个词的输入。
 
 ### Show and Tell
+![2](images/152453.png)  
 图像特征只用一次，使用GoogleNet等较大网络编码，作为LSTM输入，decode过程类似翻译的decode过程。[code]
 
 ### Show Attend and Tell
+![3](images/152807.png)  
 加入了Attention机制。
 
 - 前两个模型中输入是fc层的，而这个模型采用卷积层输出作为lstm的输入，卷积包含的某个视野域内的信息得以提取。（feature map与lstm输出间的attention）
@@ -29,9 +31,10 @@ multi指：1，来自转化word embedding；2，来自RNN抽象word embedding之
 > attention权重的学习（反向传播），需要LSTM上一个step的参数，会学习到这一部分的信息。文本生成学习也需要lstm学习信息。这就可能导致一个lstm过载，学习效果变差。
 
 ### Top-Down Bottom-Up Attention
+![4](images/153406.png)  
 双层LSTM：
 - 第一层只关注attention学习，第二层学习文本生成
-- 第一册输入图像均值feature，当前词的embedding和前一时刻第二层的输出的hidden state。
+- 第一层输入图像均值feature，当前词的embedding和前一时刻第二层的输出的hidden state。
 - attention计算第一层输出hidden state和图像不同位置的feature编码的关系。
 - 第二层将图像weighted feature和第一层的hidden state作为输入。
 
