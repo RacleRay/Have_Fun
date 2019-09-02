@@ -7,3 +7,4 @@
 [DCGAN](DCGAN/) | 编写该模型实现MNIST数字图片生成，对Cycle、Pix2Pix等简述
 [Yolo](Yolo/) | 使用预训练yolo模型，计算yolo output，使用non max suppression和score filtering，对输出的多类预测boxes进行筛选
 [Face Recognition](FaceRecognition/) | 使用triplet loss训练多层inception block网络，实现对face image编码。encoding用于1：1的verification和1：k的recognition
+[WritingShakespeare](WritingShakespeare/) | 模型很简单，utils对sample的处理，对train data的处理更有用
