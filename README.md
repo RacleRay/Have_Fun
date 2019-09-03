@@ -1,4 +1,4 @@
-# Worth_doing_AI
+# Worth_doing
 
 名称 | 描述
 --- | ---
