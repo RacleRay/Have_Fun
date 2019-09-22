@@ -48,15 +48,15 @@ def gram_matrix(x):
 
 - 对图像转化结果进行平滑处理，可以让图像线条看起来更平滑，转化不那么激烈。
 
-    '''
-    def total_variation_loss(x):
-        """平滑损失"""
-        assert K.ndim(x) == 4
-        if K.image_data_format() == 'channels_first':
-            a = K.square(x[:, :, :img_nrows - 1, :img_ncols - 1] - x[:, :, 1:, :img_ncols - 1])
-            b = K.square(x[:, :, :img_nrows - 1, :img_ncols - 1] - x[:, :, :img_nrows - 1, 1:])
-        else:
-            a = K.square(x[:, :img_nrows - 1, :img_ncols - 1, :] - x[:, 1:, :img_ncols - 1, :])
-            b = K.square(x[:, :img_nrows - 1, :img_ncols - 1, :] - x[:, :img_nrows - 1, 1:, :])
-        return K.sum(K.pow(a + b, 1.25))
-    '''
+  ```
+    def total_variation_loss(x):  
+        """平滑损失"""  
+        assert K.ndim(x) == 4  
+        if K.image_data_format() == 'channels_first':  
+            a = K.square(x[:, :, :img_nrows - 1, :img_ncols - 1] - x[:, :, 1:, :img_ncols - 1])  
+            b = K.square(x[:, :, :img_nrows - 1, :img_ncols - 1] - x[:, :, :img_nrows - 1, 1:])  
+        else:  
+            a = K.square(x[:, :img_nrows - 1, :img_ncols - 1, :] - x[:, 1:, :img_ncols - 1, :])  
+            b = K.square(x[:, :img_nrows - 1, :img_ncols - 1, :] - x[:, :img_nrows - 1, 1:, :])  
+        return K.sum(K.pow(a + b, 1.25))  
+   ```
