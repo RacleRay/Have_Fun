@@ -43,3 +43,20 @@ def gram_matrix(x):
             > ◆使用 residual connection输入和输出可以共享一部分信息，帮助学到需要变换的部分
     
 - Gram矩阵虽然有效,但是并不直观,无从解释。分割成比如[112，112]的多个小图片，content loss每个图片分别做（对应位置），和V1一样。计算风格loss时，直接将某一个生成的激活值和风格图像的每一个小图片进行余弦相似度计算，找到最match的那一个，计算平方差损失。重新定义风格损失。
+
+## Keras官方实现版本中的平滑处理
+
+- 对图像转化结果进行平滑处理，可以让图像线条看起来更平滑，转化不那么激烈。
+
+    '''
+    def total_variation_loss(x):
+        """平滑损失"""
+        assert K.ndim(x) == 4
+        if K.image_data_format() == 'channels_first':
+            a = K.square(x[:, :, :img_nrows - 1, :img_ncols - 1] - x[:, :, 1:, :img_ncols - 1])
+            b = K.square(x[:, :, :img_nrows - 1, :img_ncols - 1] - x[:, :, :img_nrows - 1, 1:])
+        else:
+            a = K.square(x[:, :img_nrows - 1, :img_ncols - 1, :] - x[:, 1:, :img_ncols - 1, :])
+            b = K.square(x[:, :img_nrows - 1, :img_ncols - 1, :] - x[:, :img_nrows - 1, 1:, :])
+        return K.sum(K.pow(a + b, 1.25))
+    '''
