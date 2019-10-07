@@ -7,7 +7,7 @@
 [DCGAN](DCGAN/)、[DCGAN--face_generate](DCGAN--face_generate/) | 编写该模型实现MNIST数字图片生成，对Cycle、Pix2Pix等简述
 [WGAN](WGAN/) | 对WGAN的原理，动机，问题分析，完成简单模型搭建和使用
 [CGAN](CGAN/) | 对CGAN的原理分析，完成简单模型搭建，在MNIST中使用
-[ACGAN](ACGAN/) | 对ACGAN的原理进行分析，完成简单模型搭建和face_generate的实验
+[ACGAN](ACGAN/) | 对ACGAN的原理进行分析，完成简单模型搭建和face_generate的实验，对比DCGAN模型稳定性有一定提升
 [Yolo](Yolo/) | 使用预训练yolo模型，计算yolo output，使用non max suppression和score filtering，对输出的多类预测boxes进行筛选
 [Face Recognition](FaceRecognition/) | 使用triplet loss训练多层inception block网络，实现对face image编码。encoding用于1：1的verification和1：k的recognition
 [WritingShakespeare](WritingShakespeare/) | 模型很简单，utils对sample的处理，对train data的处理更有用
