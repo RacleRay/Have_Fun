@@ -8,7 +8,7 @@
 [WGAN](WGAN/) | 对WGAN的原理，动机，问题分析，完成简单模型搭建和使用
 [CGAN](CGAN/) | 对CGAN的原理分析，完成简单模型搭建，在MNIST中使用
 [ACGAN](ACGAN/) | 对ACGAN的原理进行分析，完成简单模型搭建和face_generate的实验，对比DCGAN模型稳定性有一定提升
-[二次元头像生成](Anime_generation/) | 使用ACGAN的基本方法，加入sub pixel cnn和残差连接，对多特征生成问题进行处理，得到了相对较好的效果。但含某个特征的样本数量较少时，相应的generate效果较差。
+[Anime_generation](Anime_generation/) | 使用ACGAN的基本方法，加入sub pixel cnn和残差连接，对多特征生成问题进行处理，得到了相对较好的效果。但含某个特征的样本数量较少时，相应的generate效果较差。
 [Yolo](Yolo/) | 使用预训练yolo模型，计算yolo output，使用non max suppression和score filtering，对输出的多类预测boxes进行筛选
 [Face Recognition](FaceRecognition/) | 使用triplet loss训练多层inception block网络，实现对face image编码。encoding用于1：1的verification和1：k的recognition
 [WritingShakespeare](WritingShakespeare/) | 模型很简单，utils对sample的处理，对train data的处理更有用
