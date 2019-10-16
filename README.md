@@ -20,3 +20,4 @@
 [TriggerWordDetection](TriggerWordDetection/) | 音频数据的处理方法，生成含Trigger Word的数据，同时使用Conv 1D将输入的长序列频谱图转换成较短长度的输入。注意，不要使用Bidirection model，因为模型要求的是“立即”反馈检测结果。
 [CatVsDog](CatVsDog/) | 多层CNN，使用比较‘古老的’LRN+pool层建模。使用tf文件队列和batch API提高数据读取和预处理效率。
 [DNN_中文分词](DNN_中文分词/) | 分别使用bilstm和CNN，在MSR数据集上进行分词训练，得到标记概率分布。由viterbi算法求解最优标记序列。算法部分过程有待优化，容易出现过拟合。
+[FlappyBird](FlappyBird/) | 简单初窥DQN，对policy based model简单实现部分训练过程。
