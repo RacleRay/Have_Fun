@@ -1,7 +1,7 @@
 # 图像生成文本
 
 ## 核心
-将图片转化为distributed representation，由序列模型解码。
+将图片转化为distributed representation，由序列模型解码。demo ipynb文件不是完整代码，请查看py文件。
 
 ## 评测指标
 - BLEU(加入短句惩罚、修正1-gram计算方法)
@@ -25,6 +25,8 @@ multi指：1，来自转化word embedding；2，来自RNN抽象word embedding之
 - 提取将多个通道的相同位置的值concat成一个向量，成为一个包含多channel特征的tensor。
 
 - 输入时，按照feature map每个不同像素点，将每个feature点位置的tensor加权求和，作为lstm的输入（变化的量）
+
+![img](Figure_1.png)
 
 存在问题：
 
