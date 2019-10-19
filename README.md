@@ -21,3 +21,5 @@
 [CatVsDog](CatVsDog/) | 多层CNN，使用比较‘古老的’LRN+pool层建模。使用tf文件队列和batch API提高数据读取和预处理效率。
 [DNN_中文分词](DNN_中文分词/) | 分别使用bilstm和CNN，在MSR数据集上进行分词训练，得到标记概率分布。由viterbi算法求解最优标记序列。算法部分过程有待优化，容易出现过拟合。
 [FlappyBird](FlappyBird/) | 简单初窥DQN，对policy based model简单实现部分训练过程。
+[古诗生成](古诗生成/) | 使用双层LSTM模型，在古诗数据集上训练50轮，得到比较有规律的效果，当然诗歌的意境是学不到的。
+[DeepDream](DeepDream/) | 以增大某种特征提取tensor在原图中的显著程度，使用预训练的inception网络（必须是学习好的特征提取网络），以递归方式在不同尺度上，叠加梯度上升修改后的输入变量 X。
