@@ -1,5 +1,7 @@
 # Worth_doing
 
+我本江湖饮鹤无，频年贳酒不能年。经筵闭户门深坐，簑笠行谁半醉眠。 -- DNN generated
+
 名称 | 描述
 --- | ---
 [style transfer](style_tansfer/) | 使用预训练的vggnet，训练使内容损失和Gram Matrix计算出的风格损失最小化，详见项目文件夹
