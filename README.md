@@ -25,3 +25,4 @@
 [FlappyBird](FlappyBird/) | 简单初窥DQN，对policy based model简单实现部分训练过程。
 [古诗生成](古诗生成/) | 使用双层LSTM模型，在古诗数据集上训练50轮，得到比较有规律的效果，当然诗歌的意境是学不到的。
 [DeepDream](DeepDream/) | 以增大某种特征提取tensor在原图中的显著程度，使用预训练的inception网络（必须是学习好的特征提取网络），以递归方式在不同尺度上，叠加梯度上升修改后的输入变量 X。
+[NeuralMachineTranslation](NeuralMachineTranslation/) | 使用Seq2Seq attention模型，完成中文到英文的翻译模型训练、推理。
