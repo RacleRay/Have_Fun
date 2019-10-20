@@ -1,7 +1,7 @@
 # 图像生成文本
 
 ## 核心
-将图片转化为distributed representation，由序列模型解码。demo ipynb文件不是完整代码，请查看py文件。
+将图片转化为distributed representation，由序列模型解码。demo ipynb文件是show and tell，py文件是Show Attend and Tell。
 
 ## 评测指标
 - BLEU(加入短句惩罚、修正1-gram计算方法)
