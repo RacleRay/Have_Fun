@@ -5,7 +5,7 @@
 名称 | 描述
 --- | ---
 [style transfer](style_tansfer/) | 使用预训练的vggnet，训练使内容损失和Gram Matrix计算出的风格损失最小化，详见项目文件夹
-[Fast Style Transfer](FastStyleTransfer/) | 使用预训练的vggnet，加入较深的transfer net，加入全变差正则使图像更平滑。只需要transfer net就可以生成图像，速度明显提高。
+[Fast Style Transfer](FastStyleTransfer/) | 使用预训练的vggnet，加入较深的transfer net，加入全变差正则使图像更平滑。只需要transfer net就可以生成图像，速度明显提高。![img](FastStyleTransfer/org144537.png)![img](FastStyleTransfer/144537_wave.png)
 [image caption](image_caption/) | show attention and tell的比较底层的tensorflow实现，模型可加入attention以及top-down lstm优化![img](image_caption/Figure_1.png)
 [DCGAN](DCGAN/)、[DCGAN--face_generate](DCGAN--face_generate/) | 编写该模型实现MNIST数字图片生成，对Cycle、Pix2Pix等简述
 [WGAN](WGAN/) | 对WGAN的原理，动机，问题分析，完成简单模型搭建和使用
