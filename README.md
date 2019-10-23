@@ -8,7 +8,8 @@
 | ----------------------------------------- | ------------------------------------------------------------ |
 | [CatVsDog](CatVsDog/)                     | 多层CNN，使用比较‘古老的’LRN+pool层建模。使用tf文件队列和batch API提高数据读取和预处理效率。 |
 | [style transfer](style_tansfer/)          | 使用预训练的vggnet，训练使内容损失和Gram Matrix计算出的风格损失最小化，详见项目文件夹 |
-| [Fast Style Transfer](FastStyleTransfer/) | 使用预训练的vggnet，加入较深的transfer net，加入全变差正则使图像更平滑。只需要transfer net就可以生成图像，速度明显提高。![img](FastStyleTransfer/org144537.png)![img](FastStyleTransfer/144537_wave.png) |
+| [Fast Style Transfer](FastStyleTransfer/) | 使用预训练的vggnet，加入较深的transfer net，加入全变差正则使图像更平滑。只需要transfer net就可以生成图像，速度明显提高。  
+![img](FastStyleTransfer/pic1.png)![img](FastStyleTransfer/pic2.png) |
 | [Yolo](Yolo/)                             | 使用预训练yolo模型，计算yolo output，使用non max suppression和score filtering，对输出的多类预测boxes进行筛选 |
 | [Face Recognition](FaceRecognition/)      | 使用triplet loss训练多层inception block网络，实现对face image编码。encoding用于1：1的verification和1：k的recognition |
 | [DeepDream](DeepDream/)                   | 以增大某种特征提取tensor在原图中的显著程度，使用预训练的inception网络（必须是学习好的特征提取网络），以递归方式在不同尺度上，叠加梯度上升修改后的输入变量 X。 |
@@ -17,7 +18,8 @@
 
 | 名称                                                  | 描述                                                         |
 | ----------------------------------------------------- | ------------------------------------------------------------ |
-| [image caption](image_caption/)                       | show attention and tell的比较底层的tensorflow实现，模型可加入attention以及top-down lstm优化![img](image_caption/Figure_1.png) |
+| [image caption](image_caption/)                       | show attention and tell的比较底层的tensorflow实现，模型可加入attention以及top-down lstm优化  
+![img](image_caption/pic3.png) |
 | [古诗生成](古诗生成/)                                 | 使用双层LSTM模型，在古诗数据集上训练50轮，得到比较有规律的效果，当然诗歌的意境是学不到的。 |
 | [NeuralMachineTranslation](NeuralMachineTranslation/) | 使用Seq2Seq attention模型，完成中文到英文的翻译模型训练、推理。 |
 | [DNN_中文分词](DNN_中文分词/)                         | 分别使用bilstm和CNN，在MSR数据集上进行分词训练，得到标记概率分布。由viterbi算法求解最优标记序列。算法部分过程有待优化，容易出现过拟合。 |
