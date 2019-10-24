@@ -51,5 +51,5 @@
 
 | 名称                      | 描述                                                    |
 | ------------------------- | ------------------------------------------------------- |
-| [FlappyBird](FlappyBird/) | 简单初窥DQN，对policy based model简单实现部分训练过程。 |
+| [FlappyBird](FlappyBird/) | 简单初窥DQN，对value based model简单实现部分训练过程。 |
 
