@@ -26,6 +26,8 @@
 | [DebiasWordVectors](DebiasWordVectors/)               | 关键在算法，线性代数转换，使gender bias关于orthogonal axis对称 |
 | [sentence2Emoji](sentence2Emoji/)                     | average vector方法忽略了词序，但是LSTM效果更好；使用pretrianed word vec，即使只有127条数据，也有较好的效果 |
 | [Siamese](Siamese/)                     | 使用cnn / bidirectional rnn 计算QA对匹配度，使用contrastive loss。 |
+| [SpellCheck](SpellCheck/)                     | trie + editdistance简易SpellCheck。 |
+
 
 ### GAN
 
