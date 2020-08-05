@@ -52,5 +52,7 @@
 
 | 名称                      | 描述                                                    |
 | ------------------------- | ------------------------------------------------------- |
-| [FlappyBird](FlappyBird/) | 简单初窥DQN，对value based model简单实现部分训练过程。 |
+| [FlappyBird](FlappyBird/) | DQN，对value based model简单实现部分训练过程。 |
+| [Quadrotor Simulation](Quadrotor_DDPG/) | Policy Gradient，利用policy based model进行随机性响应环境的强化学习，在PARL框架下实现。 |
+
 
